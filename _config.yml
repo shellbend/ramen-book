@@ -1,0 +1,22 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: The Book of Ramen
+author: Mike Satinover (Ramen_Lord) and Scott Satinover, Ph.D.
+copyright: 2020 by Michael T. Satinover and Scott J. Satinover
+exclude_patterns: [_build]
+# only_build_toc_files: True
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: "off"
+
+html:
+  extra_navbar: ""
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book-of-ramen.tex
+

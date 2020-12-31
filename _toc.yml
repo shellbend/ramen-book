@@ -1,0 +1,120 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+
+- file: intro
+
+- file: noodles/intro
+  sections:
+    - file: noodles/ramen/intro
+      sections:
+        - file: noodles/ramen/ingredients
+        - file: noodles/ramen/making
+    - file: noodles/recipes/intro
+      sections:
+        - file: noodles/recipes/tokyo_style
+        - file: noodles/recipes/new_wave_tokyo_style
+        - file: noodles/recipes/jiro
+        - file: noodles/recipes/sapporo
+        - file: noodles/recipes/makeshift_hakata
+        - file: noodles/recipes/kitakata
+        - file: noodles/recipes/akayu
+        - file: noodles/recipes/thick_tsukemen
+        - file: noodles/recipes/new_tsukemen
+        - file: noodles/recipes/tapioca_tsukemen
+        - file: noodles/recipes/mazesoba_soupless
+
+- file: soup/intro
+  sections:
+    - file: soup/dashi/intro
+      sections:
+        - file: soup/dashi/basic
+        - file: soup/dashi/clam
+        - file: soup/dashi/bacon
+    - file: soup/chintan/intro
+      sections:
+        - file: soup/chintan/tokyo
+        - file: soup/chintan/doubutsu_kei
+        - file: soup/chintan/all_purpose
+        - file: soup/chintan/new_wave_chicken
+        - file: soup/chintan/eifukucho_taishoken
+        - file: soup/chintan/yamagata
+    - file: soup/paitan/intro
+      sections:
+        - file: soup/paitan/tonkotsu
+        - file: soup/paitan/roasted_bone_tonkotsu
+        - file: soup/paitan/jiro_tonkotsu
+        - file: soup/paitan/tonkotsu_gyokai
+        - file: soup/paitan/chicken
+        - file: soup/paitan/cement
+        - file: soup/paitan/tsukemen_thick
+    - file: soup/additional_techniques
+
+- file: tare/intro
+  sections:
+    - file: tare/shoyu/intro
+      sections:
+        - file: tare/shoyu/standard
+        - file: tare/shoyu/toasted
+        - file: tare/shoyu/new_wave
+        - file: tare/shoyu/lighter
+        - file: tare/shoyu/mushroom
+        - file: tare/shoyu/easy_meat
+        - file: tare/shoyu/kitakata
+        - file: tare/shoyu/smoked
+        - file: tare/shoyu/bacon
+        - file: tare/shoyu/mole
+    - file: tare/shio/intro
+      sections:
+        - file: tare/shio/sake_based
+        - file: tare/shio/white_wine_chicken
+        - file: tare/shio/soy_shio_blend
+    - file: tare/miso/intro
+      sections:
+        - file: tare/miso/ramen_lord
+        - file: tare/miso/spicy
+        - file: tare/miso/sweet
+    - file: tare/other
+
+- file: toppings/intro
+  sections:
+    - file: toppings/steeped_egg
+    - file: toppings/chashu/intro
+      sections:
+        - file: toppings/chashu/cook_in_soup
+        - file: toppings/chashu/braise
+        - file: toppings/chashu/dry_roast
+        - file: toppings/chashu/sous_vide
+        - file: toppings/chashu/rare
+        - file: toppings/chashu/combo
+    - file: toppings/sous_vide_chicken_breast
+    - file: toppings/green_onions
+    - file: toppings/menma
+    - file: toppings/roasted_tomato
+    - file: toppings/wood_ear_mushroom
+    - file: toppings/boiled_spinach
+    - file: toppings/pork_soboro
+    - file: toppings/spice_blend
+    - file: toppings/akayu_spicy_miso_ball
+
+- file: aroma_oil/intro
+  sections:
+    - file: aroma_oil/chicken_fat
+    - file: aroma_oil/lard
+    - file: aroma_oil/all_purpose_negi_oil
+    - file: aroma_oil/chicken_and_scallion_oil
+    - file: aroma_oil/negi_niboshi_oil
+    - file: aroma_oil/ginger_and_onion_pork_lard
+    - file: aroma_oil/chili_oil
+    - file: aroma_oil/mayu
+
+- file: assembly/intro
+  sections:
+    - file: assembly/standard_bowl
+    - file: assembly/alternatives
+    - file: assembly/component_combinations
+
+- file: appendix
+  title: Appendix
+
+- file: zreferences
