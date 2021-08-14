@@ -21,3 +21,6 @@ latex:
   latex_documents:
     targetname: book-of-ramen.tex
 
+bibtex_bibfiles:
+  - references.bib
+
