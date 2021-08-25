@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Combination Suggestions &#8212; The Book of Ramen</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Appendix: Ingredient Discussion (In Progress)" href="../appendix.html" />
+    <link rel="prev" title="Assembly Alternatives" href="alternatives.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">The Book of Ramen</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   The Book of Ramen
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../noodles/intro.html">
+   Noodles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../noodles/ramen/intro.html">
+     What is a Ramen Noodle?
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/ramen/ingredients.html">
+       Noodle Ingredients
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/ramen/making.html">
+       Making Noodles
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../noodles/recipes/intro.html">
+     Noodle Recipes
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/tokyo_style.html">
+       Tokyo Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/new_wave_tokyo_style.html">
+       New Wave Tokyo Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/jiro.html">
+       Jiro Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/sapporo.html">
+       Sapporo Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/makeshift_hakata.html">
+       Makeshift-Hakata Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/kitakata.html">
+       Kitakata Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/akayu.html">
+       Akayu Style Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/thick_tsukemen.html">
+       Thick Tsukemen Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/new_tsukemen.html">
+       New Tsukemen Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/tapioca_tsukemen.html">
+       Tapioca Tsukemen Noodle
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../noodles/recipes/mazesoba_soupless.html">
+       Mazesoba / Soupless Ramen Noodle
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../soup/intro.html">
+   Soup
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../soup/dashi/intro.html">
+     Dashi
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/dashi/basic.html">
+       Basic Dashi
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/dashi/clam.html">
+       Clam Dashi
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/dashi/bacon.html">
+       Bacon Dashi
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../soup/chintan/intro.html">
+     Basic Chintan Method
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/tokyo.html">
+       Tokyo Style Chintan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/doubutsu_kei.html">
+       “Doubutsu Kei” Style Chintan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/all_purpose.html">
+       All-Purpose Chintan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/new_wave_chicken.html">
+       New Wave Chicken Chintan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/eifukucho_taishoken.html">
+       Eifukucho Taishoken style Chintan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/chintan/yamagata.html">
+       Yamagata Style “Akayu” Chintan
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../soup/paitan/intro.html">
+     Basic Paitan Method
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/tonkotsu.html">
+       Tonkotsu Soup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/roasted_bone_tonkotsu.html">
+       Roasted Bone Tonkotsu Soup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/jiro_tonkotsu.html">
+       Jiro Style Tonkotsu Soup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/tonkotsu_gyokai.html">
+       Tonkotsu Gyokai Soup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/chicken.html">
+       Chicken Paitan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/cement.html">
+       “Cement” Ramen
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../soup/paitan/tsukemen_thick.html">
+       Tsukemen “Thick” Soup
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../soup/additional_techniques.html">
+     Additional Techniques for Soup
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tare/intro.html">
+   Tare
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../tare/shoyu/intro.html">
+     Shoyu Tare
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/standard.html">
+       Standard Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/toasted.html">
+       Toasted Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/new_wave.html">
+       New Wave Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/lighter.html">
+       Lighter Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/mushroom.html">
+       Mushroom Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/easy_meat.html">
+       Easy Meat Shoyu Tare (aka Jiro-Style Tare)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/kitakata.html">
+       Kitakata Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/smoked.html">
+       Smoked Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/bacon.html">
+       Bacon Shoyu Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shoyu/mole.html">
+       Mole Shoyu Tare
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../tare/shio/intro.html">
+     Shio Tare
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shio/sake_based.html">
+       Sake-based Shio Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shio/white_wine_chicken.html">
+       White Wine Chicken Shio
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/shio/soy_shio_blend.html">
+       Soy/Shio Blend Tare
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../tare/miso/intro.html">
+     Miso Tare
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/miso/ramen_lord.html">
+       Ramen_Lord’s Miso Tare
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/miso/spicy.html">
+       Kara Miso (Spicy Miso)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tare/miso/sweet.html">
+       Sweet Miso Tare (For Akayu Style Bowls)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tare/other.html">
+     Other Tares
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../toppings/intro.html">
+   Toppings
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/steeped_egg.html">
+     Steeped Egg
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../toppings/chashu/intro.html">
+     Chashu
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/cook_in_soup.html">
+       Cook in Soup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/braise.html">
+       Standard Braise
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/dry_roast.html">
+       Dry Roasting
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/sous_vide.html">
+       Sous Vide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/rare.html">
+       “Rare” Chashu
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../toppings/chashu/combo.html">
+       Combination Method: Braise then Roast
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/sous_vide_chicken_breast.html">
+     Sous Vide Chicken Breast
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/green_onions.html">
+     Green Onions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/menma.html">
+     Menma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/roasted_tomato.html">
+     Roasted Tomato
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/wood_ear_mushroom.html">
+     Wood Ear Mushroom
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/boiled_spinach.html">
+     Boiled Spinach
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/pork_soboro.html">
+     Pork Soboro
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/spice_blend.html">
+     Spice Blend
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../toppings/akayu_spicy_miso_ball.html">
+     Akayu Spicy Miso Ball
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../aroma_oil/intro.html">
+   Aroma Oil
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/chicken_fat.html">
+     Chicken Fat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/lard.html">
+     Lard
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/all_purpose_negi_oil.html">
+     All-Purpose Scallion (Negi) Oil
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/chicken_and_scallion_oil.html">
+     Chicken and Scallion Oil
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/negi_niboshi_oil.html">
+     Negi Niboshi Oil
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/ginger_and_onion_pork_lard.html">
+     Ginger and Onion Pork Lard
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/chili_oil.html">
+     Chili Oil
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../aroma_oil/mayu.html">
+     Mayu
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
+   Putting It All Together
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="standard_bowl.html">
+     Standard Bowl Assembly
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alternatives.html">
+     Assembly Alternatives
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Component Combination Suggestions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix.html">
+   Appendix
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../zreferences.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/assembly/component_combinations.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shoyu-ramen">
+   Shoyu Ramen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-wave-shoyu-ramen">
+   New Wave Shoyu Ramen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#miso-ramen">
+   Miso Ramen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shio-ramen">
+   Shio Ramen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#akayu-ramen">
+   Akayu Ramen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tonkotsu">
+   Tonkotsu
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tantanmen">
+   Tantanmen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chicken-paitan">
+   Chicken Paitan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tonkotsu-gyokai-tsukemen">
+   Tonkotsu Gyokai Tsukemen
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="component-combination-suggestions">
+<h1>Component Combination Suggestions<a class="headerlink" href="#component-combination-suggestions" title="Permalink to this headline">¶</a></h1>
+<p>As is the case with most ramen making, you’ll need to combine tare, oils, soup,
+and noodles to make a cohesive bowl. Below are suggestions based on the way
+these recipes were designed, but they are by no means required combinations. See
+what works for you, and adjust as necessary.</p>
+<p>You may notice that the liquids in many of these methods are in volume, rather
+than in mass measurements. This is primarily because volumetric measurement here
+is often very fast (1 tbsp is 15 mL, 300 mL is 10 oz, etc.), and asking a
+recipient to try and weigh out tare per bowl is an arduous affair in my opinion.
+Volume, therefore, does make this easier. But of course, these are just
+suggestions, your mileage may vary.</p>
+<p>In an ideal setting, getting specific ladles for these quantities will help
+considerably. But a set of measuring spoons and cups will work fine.</p>
+<div class="section" id="shoyu-ramen">
+<h2>Shoyu Ramen<a class="headerlink" href="#shoyu-ramen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>300 mL <a class="reference internal" href="../soup/chintan/tokyo.html#tokyo-style-chintan"><span class="std std-ref">Tokyo Style Chintan</span></a></p></li>
+<li><p>30 mL <a class="reference internal" href="../tare/shoyu/standard.html#standard-shoyu-tare"><span class="std std-ref">Standard Shoyu Tare</span></a></p></li>
+<li><p>20 mL <a class="reference internal" href="../aroma_oil/negi_niboshi_oil.html#negi-niboshi-oil"><span class="std std-ref">Negi Niboshi Oil</span></a></p></li>
+<li><p>135 g <a class="reference internal" href="../noodles/recipes/tokyo_style.html#tokyo-style-noodle"><span class="std std-ref">Tokyo Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="new-wave-shoyu-ramen">
+<h2>New Wave Shoyu Ramen<a class="headerlink" href="#new-wave-shoyu-ramen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>350 mL <a class="reference internal" href="../soup/chintan/new_wave_chicken.html#new-wave-chicken-chintan"><span class="std std-ref">New Wave Chicken Chintan</span></a></p></li>
+<li><p>35 mL <a class="reference internal" href="../tare/shoyu/new_wave.html#new-wave-shoyu-tare"><span class="std std-ref">New Wave Shoyu Tare</span></a></p></li>
+<li><p>A few drops of tamari, optional</p></li>
+<li><p>30 mL <a class="reference internal" href="../aroma_oil/chicken_fat.html#chicken-fat"><span class="std std-ref">Chicken Fat</span></a> (half at the bottom of the bowl, half after noodles)</p></li>
+<li><p>130 g <a class="reference internal" href="../noodles/recipes/new_wave_tokyo_style.html#new-wave-tokyo-noodle"><span class="std std-ref">New Wave Tokyo Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="miso-ramen">
+<h2>Miso Ramen<a class="headerlink" href="#miso-ramen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>350 mL <a class="reference internal" href="../soup/chintan/doubutsu_kei.html#doubutsu-kei-chintan"><span class="std std-ref">“Doubutsu Kei” Style Chintan</span></a></p></li>
+<li><p>80 g <a class="reference internal" href="../tare/miso/ramen_lord.html#ramen-lords-miso-tare"><span class="std std-ref">Ramen_Lord’s Miso Tare</span></a></p></li>
+<li><p>30 mL <a class="reference internal" href="../aroma_oil/ginger_and_onion_pork_lard.html#ginger-and-onion-pork-lard"><span class="std std-ref">Ginger and Onion Pork Lard</span></a></p></li>
+<li><p>140 g <a class="reference internal" href="../noodles/recipes/sapporo.html#sapporo-noodle"><span class="std std-ref">Sapporo Style Noodle</span></a></p></li>
+</ul>
+<p>Use the <a class="reference internal" href="standard_bowl.html#standard-bowl-assembly"><span class="std std-ref">Standard Bowl Assembly</span></a> approach or the
+<a class="reference internal" href="alternatives.html#sapporo-miso-wok-method"><span class="std std-ref">Sapporo Miso Wok Method</span></a>.</p>
+</div>
+<div class="section" id="shio-ramen">
+<h2>Shio Ramen<a class="headerlink" href="#shio-ramen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>350 mL <a class="reference internal" href="../soup/chintan/all_purpose.html#all-purpose-chintan"><span class="std std-ref">All-Purpose Chintan</span></a></p></li>
+<li><p>30 mL <a class="reference internal" href="../tare/shio/white_wine_chicken.html#white-wine-chicken-shio-tare"><span class="std std-ref">White Wine Chicken Shio</span></a> Tare</p></li>
+<li><p>15 mL <a class="reference internal" href="../aroma_oil/all_purpose_negi_oil.html#all-purpose-scallion-oil"><span class="std std-ref">All-Purpose Scallion (Negi) Oil</span></a></p></li>
+<li><p>135 g <a class="reference internal" href="../noodles/recipes/tokyo_style.html#tokyo-style-noodle"><span class="std std-ref">Tokyo Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="akayu-ramen">
+<h2>Akayu Ramen<a class="headerlink" href="#akayu-ramen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>300 mL <a class="reference internal" href="../soup/chintan/yamagata.html#yamagata-style-chintan"><span class="std std-ref">Yamagata Style “Akayu” Chintan</span></a> Soup</p></li>
+<li><p>50 g <a class="reference internal" href="../tare/miso/sweet.html#sweet-miso-tare"><span class="std std-ref">Sweet Miso Tare (For Akayu Style Bowls)</span></a></p></li>
+<li><p>20 mL <a class="reference internal" href="../aroma_oil/lard.html#lard"><span class="std std-ref">Lard</span></a></p></li>
+<li><p>40 g <a class="reference internal" href="../toppings/akayu_spicy_miso_ball.html#akayu-spicy-miso-ball"><span class="std std-ref">Akayu Spicy Miso Ball</span></a></p></li>
+<li><p>180 g <a class="reference internal" href="../noodles/recipes/akayu.html#akayu-style-noodle"><span class="std std-ref">Akayu Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="tonkotsu">
+<h2>Tonkotsu<a class="headerlink" href="#tonkotsu" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>300 mL <a class="reference internal" href="../soup/paitan/tonkotsu.html#tonkotsu-soup"><span class="std std-ref">Tonkotsu Soup</span></a></p></li>
+<li><p>30 mL <a class="reference internal" href="../tare/shio/intro.html#bare-bones-shio-tare"><span class="std std-ref">Bare Bones Shio Tare</span></a> or <a class="reference internal" href="../tare/shoyu/lighter.html#lighter-shoyu-tare"><span class="std std-ref">Lighter Shoyu Tare</span></a> (to preserve
+color, you can also use any shoyu tare if a darker color is preferred)</p></li>
+<li><p>15 mL <a class="reference internal" href="../aroma_oil/all_purpose_negi_oil.html#all-purpose-scallion-oil"><span class="std std-ref">All-Purpose Scallion (Negi) Oil</span></a></p></li>
+<li><p>130 g <a class="reference internal" href="../noodles/recipes/makeshift_hakata.html#makeshift-hakata-style-noodle"><span class="std std-ref">Makeshift-Hakata Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="tantanmen">
+<h2>Tantanmen<a class="headerlink" href="#tantanmen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>350 mL <a class="reference internal" href="../soup/chintan/all_purpose.html#all-purpose-chintan"><span class="std std-ref">All-Purpose Chintan</span></a></p></li>
+<li><p>One serving of <a class="reference internal" href="../tare/other.html#tantanmen-tare"><span class="std std-ref">Tantanmen Tare</span></a></p></li>
+<li><p>15 mL <a class="reference internal" href="../aroma_oil/chili_oil.html#chili-oil"><span class="std std-ref">Chili Oil</span></a></p></li>
+<li><p>130 g <a class="reference internal" href="../noodles/recipes/makeshift_hakata.html#makeshift-hakata-style-noodle"><span class="std std-ref">Makeshift-Hakata Style Noodle</span></a> or 140 g <a class="reference internal" href="../noodles/recipes/tokyo_style.html#tokyo-style-noodle"><span class="std std-ref">Tokyo Style Noodle</span></a></p></li>
+<li><p><a class="reference internal" href="../toppings/spice_blend.html#spice-blend"><span class="std std-ref">Spice Blend</span></a>, as desired for heat (start with 1 tsp, increase as
+desired)</p></li>
+</ul>
+<p>Since the tare in this is thick, it’s sometimes helpful to whisk the tare and
+the soup in the bowl to incorporate fully.</p>
+</div>
+<div class="section" id="chicken-paitan">
+<h2>Chicken Paitan<a class="headerlink" href="#chicken-paitan" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>300 mL <a class="reference internal" href="../soup/paitan/chicken.html#chicken-paitan-soup"><span class="std std-ref">Chicken Paitan</span></a> Soup</p></li>
+<li><p>30 mL <a class="reference internal" href="../tare/shoyu/lighter.html#lighter-shoyu-tare"><span class="std std-ref">Lighter Shoyu Tare</span></a> or <a class="reference internal" href="../tare/shio/soy_shio_blend.html#soy-shio-blend-tare"><span class="std std-ref">Soy/Shio Blend Tare</span></a></p></li>
+<li><p>15 mL <a class="reference internal" href="../aroma_oil/chicken_and_scallion_oil.html#chicken-and-scallion-oil"><span class="std std-ref">Chicken and Scallion Oil</span></a>, or <a class="reference internal" href="../aroma_oil/chicken_fat.html#chicken-fat"><span class="std std-ref">Chicken Fat</span></a> (you can also use
+both)</p></li>
+<li><p>130 g <a class="reference internal" href="../noodles/recipes/makeshift_hakata.html#makeshift-hakata-style-noodle"><span class="std std-ref">Makeshift-Hakata Style Noodle</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="tonkotsu-gyokai-tsukemen">
+<h2>Tonkotsu Gyokai Tsukemen<a class="headerlink" href="#tonkotsu-gyokai-tsukemen" title="Permalink to this headline">¶</a></h2>
+<p>Please note the slightly lower volume of soup and the slightly higher relative
+salinity, both of which are required for tsukemen to work.</p>
+<ul class="simple">
+<li><p>250 mL <a class="reference internal" href="../soup/paitan/tsukemen_thick.html#tsukemen-thick-soup"><span class="std std-ref">Tsukemen “Thick” Soup</span></a></p></li>
+<li><p>30 mL <a class="reference internal" href="../tare/shoyu/toasted.html#toasted-shoyu-tare"><span class="std std-ref">Toasted Shoyu Tare</span></a></p></li>
+<li><p>10 mL (approx. 2 tsp) gyofun</p></li>
+<li><p>A few grinds of black pepper</p></li>
+<li><p>200 g (or more) <a class="reference internal" href="../noodles/recipes/thick_tsukemen.html#thick-tsukemen-noodle"><span class="std std-ref">Thick Tsukemen Noodle</span></a></p></li>
+</ul>
+<p>Follow the <a class="reference internal" href="alternatives.html#tsukemen-approach"><span class="std std-ref">Tsukemen</span></a> approach, ensuring the noodles are shocked
+thoroughly before assembling the soup.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./assembly"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="alternatives.html" title="previous page">Assembly Alternatives</a>
+    <a class='right-next' id="next-link" href="../appendix.html" title="next page">Appendix: Ingredient Discussion (In Progress)</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Mike Satinover (Ramen_Lord) and Scott Satinover, Ph.D.<br/>
+        
+            &copy; Copyright 2020 by Michael T. Satinover and Scott J. Satinover.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
